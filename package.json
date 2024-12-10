@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "author": "bobi <1090851297@qq.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "prepare": "husky",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "commit": "git add . && ./node_modules/full-featured-cz/standalone.js",
+    "lint": "eslint ./src --ext .ts .tsx --fix"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "^2.4.4",
+    "@umijs/max": "^4.3.36",
+    "antd": "^5.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "commitlint": "^19.6.0",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "eslint": "^9.16.0",
+    "full-featured-cz": "0.0.1-development",
+    "husky": "^9",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "typescript": "^5.0.3"
+  },
+  "type": "module"
+}
